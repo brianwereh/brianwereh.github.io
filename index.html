@@ -159,18 +159,19 @@
       <!--contact section design-->
       <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-        <form action="mailto:arekbrianprince@gmail.com" method="post" enctype="text/plain">
+        <form id="contact_form" action="mailto:arekbrianprince@gmail.com" method="post" enctype="text/plain">
           <div class="input-box">
-            <input type="text" name="Full name" placeholder="Full Name" required>
-            <input type="email" name="Email" placeholder="Email Address" required>
+            <input type="text" name="Full name" id="name" placeholder="Full Name" required>
+            <input type="email" name="Email" id="email" placeholder="Email Address" required>
           </div>
           <div class="input-box">
-            <input type="tel" name="Phone" placeholder="Mobile Number">
-            <input type="text" name="Subject" placeholder="Email Subject">
+            <input type="tel" name="Phone" id="phone" placeholder="Mobile Number" required>
+            <input type="text" name="Subject" id="subject" placeholder="Email Subject">
           </div>
-          <textarea name="Message" cols="30" rows="10" placeholder="Your Message"></textarea>
-          <input type="submit" value="Send Message" class="btn">
+          <textarea name="Message" cols="30" rows="10" id="message" placeholder="Your Message" required></textarea>
+          <input type="submit" id="SubmitButton" value="Send Message" class="btn">
         </form>
+        <p id="output"> </p>
       </section>
       
       <!--footer design-->
